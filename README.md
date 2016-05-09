@@ -10,3 +10,8 @@ Public Repo for Pequonnock Yacht Club
 * http://www.calyachtclub.com/
 * https://www.stfyc.com/
 * http://www.pyc.de/
+
+## Videos
+* https://youtu.be/jkk4RMSPI-4
+* https://youtu.be/lc6YKbQhJ2o
+* https://youtu.be/wSsri_n3SBg
