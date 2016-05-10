@@ -372,6 +372,11 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+#page:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -437,10 +442,85 @@ p {
 :before {
   padding-right: 0.5em; }
 
+#page {
+  position: relative;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto; }
+
+header {
+  float: left;
+  width: 100%; }
+
+#main-nav {
+  float: left;
+  width: 100%; }
+
+main {
+  float: left;
+  width: 100%; }
+
+footer {
+  float: left;
+  width: 100%; }
+
+.browserupgrade {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+body {
+  overflow-x: hidden; }
+
+#main-nav nav {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100%;
+  margin: 0 9999px 0 -9999px;
+  padding: 10px 9999px;
+  background-color: darkblue; }
+
+#main-nav ul.navigation {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  #main-nav ul.navigation li {
+    display: inline-block; }
+    #main-nav ul.navigation li a {
+      color: white; }
+
+#main-nav.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
 footer {
   text-align: center; }
+
+/* drupal inspired accessibility styles */
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  overflow: hidden;
+  height: 1px; }
+  .element-invisible.element-focusable:focus {
+    position: static !important;
+    clip: auto;
+    overflow: visible;
+    height: auto; }
+
+/* css-tricks inspired - http://css-tricks.com/examples/IconFont/ */
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
 
 .hero {
   width: 100%;
   height: 400px;
-  background: transparent url("../images/content/from-water.jpg") repeat-x center top; }
+  background: transparent url("../images/content/from-water.jpg") no-repeat center bottom; }
