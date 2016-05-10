@@ -442,4 +442,5 @@ footer {
 
 .hero {
   width: 100%;
-  background: transparent url("../images/content/from-water.jpg") no-repeat left top; }
+  height: 400px;
+  background: transparent url("../images/content/from-water.jpg") repeat-x center top; }
