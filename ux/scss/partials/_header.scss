@@ -12,9 +12,11 @@ header {
   }
   h1 {
     float: left;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive; // TODO: var
+    font-size: 36px; font-size: 3.6rem;
     line-height: 75px; // TODO: match to logo
     margin: 0;
+    border: 0;
     padding: 0;
   }
 }
