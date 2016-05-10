@@ -4,6 +4,7 @@
      * 2. Prevent iOS and IE text size adjust after device orientation change,
      *    without disabling user zoom.
      */
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -372,7 +373,7 @@ th {
   font-weight: normal;
   font-style: normal; }
 
-#page:after {
+#page:after, header:after {
   content: "";
   display: table;
   clear: both; }
@@ -470,10 +471,27 @@ footer {
   left: 0;
   width: 100%; }
 
+header #logo {
+  float: left;
+  margin: 0;
+  margin-right: 10px;
+  margin-right: 1rem;
+  border: 0;
+  padding: 0; }
+  header #logo img {
+    display: block; }
+
+header h1 {
+  float: left;
+  font-family: 'Indie Flower', cursive;
+  line-height: 75px;
+  margin: 0;
+  padding: 0; }
+
 body {
   overflow-x: hidden; }
 
-#main-nav nav {
+#main-nav {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -481,23 +499,21 @@ body {
   margin: 0 9999px 0 -9999px;
   padding: 10px 9999px;
   background-color: darkblue; }
-
-#main-nav ul.navigation {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  #main-nav ul.navigation li {
-    display: inline-block; }
-    #main-nav ul.navigation li a {
-      color: white; }
-
-#main-nav.sticky {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0; }
+  #main-nav ul.navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #main-nav ul.navigation li {
+      display: inline-block; }
+      #main-nav ul.navigation li a {
+        color: white; }
+  #main-nav.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0; }
 
 footer {
   text-align: center; }
