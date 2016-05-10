@@ -439,3 +439,7 @@ p {
 
 footer {
   text-align: center; }
+
+.hero {
+  width: 100%;
+  background: transparent url("../images/content/from-water.jpg") no-repeat left top; }
