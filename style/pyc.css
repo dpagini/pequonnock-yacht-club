@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /**
      * 1. Set default font family to sans-serif.
@@ -374,3 +375,10 @@ th {
 
 h1 {
   color: blue; }
+
+a:after {
+  font-family: 'Font-Awesome';
+  content: ""; }
+
+footer {
+  text-align: center; }
