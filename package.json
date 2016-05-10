@@ -14,8 +14,12 @@
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.1",
-    "normalize-scss": "^4.2.1"
+    "gulp-webserver": "^0.9.1",
+    "normalize-scss": "^4.2.1",
+    "opn": "^4.0.1",
+    "run-sequence": "^1.1.5"
   },
   "scripts": {
     "build": "gulp",
