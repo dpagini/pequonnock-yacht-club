@@ -1,9 +1,65 @@
-h1 {
-  color: blue;
+* {
+	@include box-sizing(border-box);
+}
+*:before, *:after {
+	@include box-sizing(border-box);
+}
+html {
+	/* set up rems */
+	/* (default typically 16px) */
+	font-size: 62.5%; /* 16 * 0.625 = 10px */
+}
+body {
+	// font-family: $font-family-base; // TODO
+	// font-size: 12px; font-size: 1.2rem; // odd chrome bug: http://fvsch.com/code/bugs/chrome-rem-fontsize/
+	font-size: 140%; // 14px
+	line-height: normal; // TODO: should this stay normal?
+	// color: $voya-color-text;
+	// background: $white;
+}
+img {
+	max-width: 100%;
+}
+// TODO: part of normalize? */
+strong { font-weight: bold; }
+em { font-style: italic; }
+sup {
+	font-size: 0.75em;
+	vertical-align: super;
+	top: auto; // undo normalize.css
+}
+sub {
+	font-size: 0.75em;
+	vertical-align: sub;
+	bottom: auto; // undo normalize.css
+}
+p {
+	line-height: 1.5; /* this is best practice */
+	margin: 0.25em 0px 0.66em; /* em's seem fine to me here, relative to the size of the p text */
 }
 a {
-  &:after {
-    font-family: 'FontAwesome';
-    content: $fa-var-external-link;
-  }
+  // TODO
+}
+h1 {
+  // TODO
+}
+
+/* FontAwesome */
+:before, :after {
+	/* generic fontawesome style */
+	display: inline-block;
+	color: inherit;
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	line-height: inherit;
+	vertical-align: middle;
+	@include font-smoothing();
+}
+:after {
+	padding-left: 0.5em;
+}
+:before {
+	padding-right: 0.5em;
 }
