@@ -15,6 +15,7 @@ var paths = {
   extras: ['extras/**/*'],
   font: ['font/'],
   html: ['html/**/*.htm'],
+  img: ['images/**/*'],
   js: ['scripts/**/*.js'],
   sass: ['scss/**/*.scss'],
   script: 'script/'
@@ -44,11 +45,23 @@ gulp.task('extras', ['clean'], function(){
     .pipe(gulp.dest(bases.build));
 });
 
+gulp.task('images', ['clean'], function(){
+  return gulp.src(paths.img, {cwd: bases.app})
+    .pipe(gulp.dest(bases.build + 'images/'));
+});
+
 // TODO: make this an array somehow
 // TODO: this copies the font-awesome/4.4.0 folder (which wont go to github anyway)
 gulp.task('font', ['clean'], function(){
   return gulp.src('node_modules/font-awesome/fonts/*')
     .pipe(gulp.dest(bases.build + paths.font + 'font-awesome/'));
+});
+
+gulp.task('server', ['build'], function(){
+  return true;
+});
+gulp.task('watch', ['server'], function(){
+  return true;
 });
 
 gulp.task('gh-pages', ['build'], function(){
@@ -59,6 +72,7 @@ gulp.task('gh-pages', ['build'], function(){
     }));
 });
 
-gulp.task('build', ['clean','sass','html','extras','font']);
+gulp.task('build', ['clean','sass','html','extras','font','images']);
+gulp.task('local', ['build','server','watch']);
 gulp.task('deploy', ['build','gh-pages']);
-gulp.task('default', ['build']);
+gulp.task('default', ['local']);
