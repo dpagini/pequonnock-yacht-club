@@ -1,0 +1,9 @@
+h1 {
+  color: blue;
+}
+a {
+  &:after {
+    font-family: 'FontAwesome';
+    content: $fa-var-external-link;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "pequonnock-yacht-club",
+  "version": "0.0.1-dev",
+  "description": "Github repository for Pequonnock Yacht Club's digital presence.",
+  "author": "David Pagini",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dpagini/pequonnock-yacht-club.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "font-awesome": "4.6.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-sass": "^2.3.1",
+    "normalize-scss": "^4.2.1"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
