@@ -547,7 +547,17 @@ body {
     top: 0; }
 
 footer {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100%;
+  margin: 0 9999px 0 -9999px;
+  padding: 50px 9999px 100px;
+  background-color: #80afc7;
   text-align: center; }
+  footer p {
+    color: white;
+    font-size: 0.9em; }
 
 /* drupal inspired accessibility styles */
 .element-invisible {
