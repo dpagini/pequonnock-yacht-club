@@ -2,13 +2,11 @@ body {
   overflow-x: hidden; // used for hiding scrollbar of nav method
 }
 #main-nav {
-  nav {
-    @include box-sizing(content-box);
-    width: 100%;
-    margin: 0 9999px 0 -9999px;
-    padding: 10px 9999px;
-    background-color: darkblue; // TODO: var
-  }
+  @include box-sizing(content-box);
+  width: 100%;
+  margin: 0 9999px 0 -9999px;
+  padding: 10px 9999px;
+  background-color: darkblue; // TODO: var
   ul.navigation {
     display: flex;
     justify-content: space-around;
