@@ -9,3 +9,10 @@
     -moz-osx-font-smoothing: auto;
   }
 }
+
+$default-box-sizing: border-box !default;
+@mixin box-sizing($box-model: $default-box-sizing) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
