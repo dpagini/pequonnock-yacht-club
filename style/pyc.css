@@ -423,6 +423,34 @@ p {
   margin: 0.25em 0px 0.66em;
   /* em's seem fine to me here, relative to the size of the p text */ }
 
+h1, h2, h3, h4 {
+  font-family: 'Indie Flower', cursive; }
+
+h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+  margin: 25px 0 15px;
+  margin: 2.5rem 0 1.5rem;
+  border: 0;
+  padding: 0; }
+
+h2 {
+  font-size: 40px;
+  font-size: 4rem;
+  margin: 15px 0 10px;
+  margin: 1.5rem 0 1rem;
+  border: 0;
+  border-bottom: 1px solid black;
+  padding: 0; }
+
+h3 {
+  font-size: 34px;
+  font-size: 3.4rem;
+  margin: 10px 0;
+  margin: 1rem 0;
+  border: 0;
+  padding: 0; }
+
 /* FontAwesome */
 :before, :after {
   /* generic fontawesome style */
@@ -484,8 +512,11 @@ header #logo {
 header h1 {
   float: left;
   font-family: 'Indie Flower', cursive;
+  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 75px;
   margin: 0;
+  border: 0;
   padding: 0; }
 
 body {
