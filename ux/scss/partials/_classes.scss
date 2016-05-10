@@ -1,3 +1,27 @@
-.button {
-  
+%button {
+
+}
+
+/* drupal inspired accessibility styles */
+.element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	overflow: hidden;
+	height: 1px;
+	&.element-focusable:focus {
+		position: static !important;
+		clip: auto;
+		overflow: visible;
+		height: auto;
+	}
+}
+
+/* css-tricks inspired - http://css-tricks.com/examples/IconFont/ */
+%screen-reader-text {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.screen-reader-text {
+	@extend %screen-reader-text;
 }
