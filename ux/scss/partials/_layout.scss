@@ -1,5 +1,7 @@
 html {}
-body {}
+body {
+  overflow-x: hidden; // used for hiding scrollbar of full-width method
+}
 #page {
   position: relative;
   max-width: 1200px;
