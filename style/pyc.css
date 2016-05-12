@@ -404,7 +404,7 @@ html {
   /* 16 * 0.625 = 10px */ }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 140%;
   line-height: normal; }
 
@@ -433,7 +433,18 @@ p {
   margin: 0.25em 0px 0.66em;
   /* em's seem fine to me here, relative to the size of the p text */ }
 
-h1, h2, h3, h4 {
+a {
+  position: relative; }
+  a:link {
+    text-decoration: none; }
+  a:visited {
+    color: purple; }
+  a:hover {
+    text-decoration: underline; }
+  a :active {
+    top: 1px; }
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu", sans-serif; }
 
 h1 {
@@ -533,10 +544,8 @@ header {
     padding: 0; }
 
 #main-nav {
-  padding-top: 10px;
-  padding-top: 1rem;
-  padding-bottom: 10px;
-  padding-bottom: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  border-top: 3px solid #ff0000;
   background-color: darkblue; }
   #main-nav ul.navigation {
     display: flex;
@@ -547,8 +556,16 @@ header {
     #main-nav ul.navigation li {
       display: inline-block; }
       #main-nav ul.navigation li a {
+        display: inline-block;
+        padding: 15px 10px;
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-weight: bold;
         color: white;
         text-transform: uppercase; }
+        #main-nav ul.navigation li a:hover {
+          color: #ff0000;
+          text-decoration: none; }
   #main-nav.sticky {
     position: fixed;
     width: 100%;
@@ -586,4 +603,5 @@ footer {
 .hero {
   width: 100%;
   height: 400px;
-  background: transparent url("../images/content/from-water.jpg") no-repeat center bottom; }
+  background: transparent url("../images/content/from-water.jpg") no-repeat center bottom;
+  background-repeat: repeat-x; }
