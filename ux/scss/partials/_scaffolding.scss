@@ -38,10 +38,23 @@ p {
 	margin: 0.25em 0px 0.66em; /* em's seem fine to me here, relative to the size of the p text */
 }
 a {
-  // TODO
+  // https://css-tricks.com/almanac/selectors/a/active/
+	position: relative;
+	&:link {
+		text-decoration: none;
+	}
+	&:visited {
+		color: purple; // TODO: ?
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+	:active {
+		top: 1px; // simulate press
+	}
 }
-h1, h2, h3, h4 {
-	font-family: $font-family-heading;
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-headings;
 }
 h1 {
   font-size: 48px; font-size: 4.8rem;

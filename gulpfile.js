@@ -7,6 +7,7 @@ var   gulp      = require('gulp'),
       plumber   = require('gulp-plumber'),
       sequence  = require('run-sequence'),
       sass      = require('gulp-sass'),
+      util      = require('gulp-util'),
       webserver = require('gulp-webserver');
 
 var bases = {
@@ -31,6 +32,11 @@ var server = {
   page: 'index.htm'
 }
 
+var onError = function(e) {
+  util.beep();
+  console.log(e);
+}
+
 // CLean the build folder
 gulp.task('clean', function() {
   return gulp.src(bases.build,{read: false})
@@ -39,6 +45,7 @@ gulp.task('clean', function() {
 
 gulp.task('sass', function(){
   return gulp.src(paths.sass, {cwd: bases.app})
+    .pipe(plumber({ errorHandler: onError }))
     .pipe(sass({
       includePaths: ['node_modules/normalize-scss/sass'], // include normalize for use in css
     })) // Using gulp-sass
@@ -72,7 +79,7 @@ gulp.task('webserver', ['build'], function(){
     .pipe(webserver({
       host: server.host,
       port: server.port,
-      fallback: server.page,
+      fallback: server.page, // TODO: this is like the 404 page, we need it to read the index.htm of a folder
       livereload: true,
       directoryListing: false
     }));

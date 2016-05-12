@@ -3,6 +3,7 @@
 $color-white: #ffffff;
 $color-black: #000000;
 $color-gray: #f4f3f4;
+$color-red: #ff0000;
 
 $color-background: $color-gray;
 
@@ -11,8 +12,9 @@ $font-family-arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $font-family-fontawesome: 'FontAwesome';
 $font-family-indieflower: 'Indie Flower', cursive;
 $font-family-ubuntu: 'Ubuntu', sans-serif;
-$font-family-base: $font-family-ubuntu;
-$font-family-heading: $font-family-base;
+$font-family-base: $font-family-arial;
+$font-family-headings: $font-family-ubuntu;
+$font-family-nav: $font-family-ubuntu;
 
 // BREAKPOINTS
 // $phone-old: 240px;
