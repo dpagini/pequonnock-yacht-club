@@ -4,8 +4,7 @@
      * 2. Prevent iOS and IE text size adjust after device orientation change,
      *    without disabling user zoom.
      */
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans:300|Ubuntu:500);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -404,8 +403,8 @@ html {
   /* 16 * 0.625 = 10px */ }
 
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 140%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 160%;
   line-height: normal; }
 
 img {
@@ -560,7 +559,7 @@ header {
         padding: 15px 10px;
         font-size: 18px;
         font-size: 1.8rem;
-        font-weight: bold;
+        font-weight: 500;
         color: white;
         text-transform: uppercase; }
         #main-nav ul.navigation li a:hover {
