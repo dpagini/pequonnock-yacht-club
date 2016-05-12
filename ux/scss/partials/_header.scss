@@ -1,5 +1,7 @@
 header {
   @extend %clearfix;
+  @extend %full-width-component;
+  background-color: $color-background;
   #logo {
     float: left;
     margin: 0;
@@ -12,7 +14,6 @@ header {
   }
   h1 {
     float: left;
-    font-family: 'Indie Flower', cursive; // TODO: var
     font-size: 36px; font-size: 3.6rem;
     line-height: 75px; // TODO: match to logo
     margin: 0;

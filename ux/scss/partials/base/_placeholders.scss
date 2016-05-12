@@ -1,0 +1,9 @@
+@import "mixins"; // needed for box-sizing below, may get loaded twice
+@import "placeholders/clearfix";
+
+%full-width-component {
+  @include box-sizing(content-box);
+  width: 100%;
+  margin: 0 9999px 0 -9999px;
+  padding: 0 9999px;
+}

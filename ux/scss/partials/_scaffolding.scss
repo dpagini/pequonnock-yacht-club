@@ -10,7 +10,7 @@ html {
 	font-size: 62.5%; /* 16 * 0.625 = 10px */
 }
 body {
-	// font-family: $font-family-base; // TODO
+	font-family: $font-family-base;
 	// font-size: 12px; font-size: 1.2rem; // odd chrome bug: http://fvsch.com/code/bugs/chrome-rem-fontsize/
 	font-size: 140%; // 14px
 	line-height: normal; // TODO: should this stay normal?
@@ -41,7 +41,7 @@ a {
   // TODO
 }
 h1, h2, h3, h4 {
-	font-family: 'Indie Flower', cursive; // TODO: var
+	font-family: $font-family-indieflower;
 }
 h1 {
   font-size: 48px; font-size: 4.8rem;
@@ -67,7 +67,7 @@ h3 {
 	/* generic fontawesome style */
 	display: inline-block;
 	color: inherit;
-	font-family: 'FontAwesome';
+	font-family: $font-family-fontawesome;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1;

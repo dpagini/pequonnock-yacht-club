@@ -1,12 +1,10 @@
 footer {
-  @include box-sizing(content-box);
-  width: 100%;
-  margin: 0 9999px 0 -9999px;
-  padding: 50px 9999px 100px;
-  background-color: #80afc7;
+  @extend %full-width-component;
+  padding-top: 50px; padding-top: 5rem;
+  padding-bottom: 100px; padding-top: 10rem;
+  background-color: $color-background;
   text-align: center;
   p {
-    color: white; // TODO: var
     font-size: 0.9em;
   }
 }

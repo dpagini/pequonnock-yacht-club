@@ -1,0 +1,37 @@
+
+// COLORS
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #f4f3f4;
+
+$color-background: $color-gray;
+
+// FONTS
+$font-family-arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-family-fontawesome: 'FontAwesome';
+$font-family-indieflower: 'Indie Flower', cursive;
+$font-family-base: $font-family-arial;
+$font-family-heading: $font-family-base;
+
+// BREAKPOINTS
+// $phone-old: 240px;
+// $phone-feature: 320px;
+// $phone-smart: 480px;
+// $phone-smart-landscape: 600px;
+// $tablet-small: 720px; // netbook, Kindle Fire
+// $tablet-medium: 768px;
+// $tablet-large: 800px;
+// $desktop-old: 1024px;
+// $desktop-modern: 1280px;
+$breakpoint-full: 1280px;
+
+// ZINDEX
+$zindex-header: 100;
+$zindex-nav: 95;
+$zindex-main: 90;
+$zindex-overlay: 2000;
+
+// TIMING
+
+
+// ODDITIES
