@@ -3,6 +3,7 @@ Public Repo for Pequonnock Yacht Club
 
 
 ## List of Websites We Like
+* http://www.paynesdock.com/
 * http://www.ahyc.net/
 * http://www.calyachtclub.com/
 * http://www.dpyc.org/
