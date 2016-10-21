@@ -14,6 +14,8 @@
         "acquia/blt":                                   "^8.3",
         "composer/installers":                          "^1.0.20",
         "cweagans/composer-patches":                    "dev-master#5456199acdcc16b243814aa45259f4c56272a634 as 1.5.0",
+        "drupal/admin_toolbar":                         "^8.1",
+        "drupal/coffee":                                "~8",
         "drupal/console":                               "1.0.0-beta5",
         "drupal/core":                                  "~8",
         "drupal/features":                              "^8.3.0-beta9",
