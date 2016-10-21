@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/acquia-pso/voya_im.svg?token=AXEnPGbazssy8JQYXBRe&branch=master)](https://travis-ci.com/acquia-pso/voya_im)
 
 # Pequonnock Yacht Club
-Public Repo for Pequonnock Yacht Club
+Public Repo for Pequonnock Yacht Club's 💥_New_💥 Website
 
 
 ## List of Websites We Like
