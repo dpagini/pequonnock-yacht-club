@@ -3,7 +3,7 @@ project:
     prefix: PYC
     human_name: 'Pequonnock Yacht Club'
     profile:
-        name: standard
+        name: pyc_profile
     local:
         protocol: http
         hostname: 'local.${project.machine_name}.com'
