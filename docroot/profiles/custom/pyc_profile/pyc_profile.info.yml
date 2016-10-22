@@ -8,4 +8,10 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - coffee
+  - node
   - taxonomy
+  - views
+
+themes:
+  - bartik # TODO temp
+  - seven
