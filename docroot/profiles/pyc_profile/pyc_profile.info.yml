@@ -1,0 +1,8 @@
+name: Pequonnock Yach Club - Install Profile
+type: profile
+description: '@TODO'
+core: 8.x
+
+# Required modules
+dependencies:
+  - taxonomy

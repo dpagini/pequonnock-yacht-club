@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_officer_title
+field_name: field_officer_title
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: commodore
+      label: Commodore
+    -
+      value: commodore_vice
+      label: 'Vice Commodore'
+    -
+      value: commodore_rear
+      label: 'Rear Commodore'
+    -
+      value: secretary_recording
+      label: 'Recording Secretary'
+    -
+      value: secretary_financial
+      label: 'Financial Secretary'
+    -
+      value: treasurer
+      label: Treasurer
+    -
+      value: bog
+      label: 'Board Member'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
