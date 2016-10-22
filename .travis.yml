@@ -78,13 +78,14 @@ before_script:
 script:
   - blt -Dbehat.run-server=true -Dcreate_alias=false -Dbehat.launch-phantom=true ci:build:validate:test
 
-deploy:
-   - provider: script
-     script: blt deploy -Ddeploy.commitMsg="Automated commit by Travis CI for Build ${TRAVIS_BUILD_ID}" -Ddeploy.branch="${TRAVIS_BRANCH}-build"
-     skip_cleanup: true
-     on:
-       branch: master
-       php: 5.6
+# @TODO disabling deploy since there are no ssh keys on free Travis
+# deploy:
+#   - provider: script
+#      script: blt deploy -Ddeploy.commitMsg="Automated commit by Travis CI for Build ${TRAVIS_BUILD_ID}" -Ddeploy.branch="${TRAVIS_BRANCH}-build"
+#      skip_cleanup: true
+#      on:
+#        branch: master
+#        php: 5.6
 
 after_failure:
   - vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "$TRAVIS_BUILD_DIR/reports/behat/*.log"
