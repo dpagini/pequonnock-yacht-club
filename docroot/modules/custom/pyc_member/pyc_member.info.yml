@@ -1,0 +1,13 @@
+name: PYC Member
+description: Establishes the Member content type.
+package: Yacht Club
+type: module
+core: 8.x
+
+dependencies:
+  - address
+  - field
+  - file
+  - image
+  - options
+  - user
